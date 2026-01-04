@@ -1,27 +1,63 @@
-# Routing
+# project-addTasks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.0.
+A small task management project for adding, listing, and completing tasks. This repository provides a simple, lightweight example app (API and/or frontend) to demonstrate basic CRUD operations for tasks.
 
-## Development server
+## Features
+- Add tasks with title and optional description
+- List all tasks
+- Mark tasks as completed / toggle completion
+- Delete tasks
+- Simple, extensible codebase suitable for learning or quick prototyping
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Getting Started
+Follow these steps to run the project locally.
 
-## Code scaffolding
+### Prerequisites
+- Node.js (>= 14) and npm, or yarn
+- Git
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Installation
+1. Clone the repository:
 
-## Build
+   git clone https://github.com/kareemEzzatH/project-addTasks.git
+   cd project-addTasks
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Install dependencies:
 
-## Running unit tests
+   npm install
+   # or
+   yarn install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Copy environment variables (if any):
 
-## Running end-to-end tests
+   cp .env.example .env
+   # then edit .env as needed
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+4. Start the development server:
 
-## Further help
+   npm start
+   # or
+   npm run dev
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Usage
+- The project includes an API (or frontend) to create, read, update, and delete tasks.
+- Example API endpoints (adjust to your implementation):
+  - GET /tasks — list tasks
+  - POST /tasks — create a new task
+  - PATCH /tasks/:id — update a task (e.g., mark completed)
+  - DELETE /tasks/:id — remove a task
+
+## Project Structure (example)
+- /src — source code
+- /src/routes — API routes
+- /src/models — data models
+- /README.md — this file
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request with a clear description of changes and rationale. Follow existing code style and include tests where reasonable.
+
+## License
+Specify a license (e.g., MIT) in the LICENSE file.
+
+## Contact
+If you have questions, open an issue or contact the repository owner.
